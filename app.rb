@@ -35,8 +35,6 @@ class App < Sinatra::Base
       op = "/"
     end
     string = params[:number1] + op + params[:number2]
-    string += op
-    string += params[:number2]
     "#{eval string}"
   end
 
